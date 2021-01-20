@@ -1,0 +1,6 @@
+<form>
+    Название брэнда <input [(ngModel)]="car.brandName" name="brandName"> <br>
+    Название модели<input [(ngModel)]='car.modelName' name="modelName"> <br>
+    Цена в рублях<input [(ngModel)]='car.priceInRub' name="priceInRub"> <br>
+    <button type="submit" (click)="addCarInCarsComponent()">Add new</button>
+</form>
