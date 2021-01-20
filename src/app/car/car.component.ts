@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Cars } from 'src/model/car.model';
 import { CarServiceService } from 'src/service/car-service.service';
@@ -9,6 +9,8 @@ import { CarServiceService } from 'src/service/car-service.service';
   styleUrls: ['./car.component.css'],
 })
 export class CarComponent implements OnInit {
+  @Input() carInput: Cars;
+
   car: Cars;
   constructor(
     private route: ActivatedRoute,

@@ -1,9 +1,13 @@
-<div *ngFor='let car of cars'>
+<!-- <div *ngFor='let car of cars'>
     <h1>
         <a [routerLink]='["car", car.id]'>
             {{car.brandName}}
         </a>
     </h1>
+</div> -->
+
+<div *ngFor="let car of cars">
+    <app-car [carInput]="car"></app-car>
 </div>
 
 <div>
